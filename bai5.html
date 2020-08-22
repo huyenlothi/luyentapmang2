@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhap chuoi 1");
+    let b = prompt("nhap chuoi 2");
+    let count=0;
+document.write("chuoi 1: " + a +"<br>");
+document.write("chuoi 2: " + b + "<br>");
+if (a.length != b.length) {
+    document.write("chuoi 1 khong giong chuoi 2");
+} if (a.length == b.length) {
+    for (let i=0; i<a.length;i++) {
+        if (a[i] !== b[i]) {
+            document.write("chuoi 1 khong giong chuoi 2");
+            break;
+        }
+        if (a[i] === b[i]) {
+            count++;
+        }
+    }
+    if (count == a.length) {
+        document.write("chuoi 1 giong chuoi 2");
+    }
+    }
+
+    // a = nhapchuoi(ab);
+    // b= nhapchuoi(ab);
+    // function nhapchuoi(ab) {
+    //     for (let i=0;i<num;i++) {
+    //         ab[i]= prompt("nhap cac han tu vao chuoi");
+    //     }
+    // }
+</script>
+</body>
+</html>

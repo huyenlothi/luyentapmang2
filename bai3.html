@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let array = ['a', 'f', '2', '4', '7', 'e', '1', 't',"-5","9"];
+    let alphabe = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
+        'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'];
+    let count = 0;
+    let so;
+    for (let i = 0; i < alphabe.length; i++) {
+        if (alphabe.indexOf(array[i]) !== -1) {
+            count += 1;
+        }
+    }
+    so = array.length - count;
+    document.write("co " + so + "so trong mang");
+</script>
+</body>
+</html>
